@@ -521,7 +521,7 @@ def main():
                 gr.Markdown("## Basic Settings")
                 resolution = gr.Radio(
                     choices=["144p", "240p", "360p", "480p", "720p"],
-                    value="480p",
+                    value="144p",
                     label="Resolution",
                 )
                 aspect_ratio = gr.Radio(
