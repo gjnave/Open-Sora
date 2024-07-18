@@ -4,7 +4,7 @@ import subprocess
 def list_files(directory):
     files = []
     for file in os.listdir(directory):
-        if os.path.isfile(os.path.join(directory, file)):
+        if os.path.isfile(os.path.join(directory, file)) and not file.endswith("watermarked.mp4"):
             files.append(file)
     return files
 
