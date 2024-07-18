@@ -9,7 +9,8 @@ def list_files(directory):
     return files
 
 def main():
-    output_dir = os.path.expanduser("~/outputs")
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    output_dir = os.path.join(script_dir, "outputs")
     
     # Check if the directory exists
     if not os.path.isdir(output_dir):
